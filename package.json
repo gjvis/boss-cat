@@ -1,0 +1,20 @@
+{
+  "name": "boss-cat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cat.js",
+  "scripts": {
+    "test": "node node_modules/tape/bin/tape test/*.js | node node_modules/tap-spec/bin/cmd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "gjvis:boss-cat"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "6to5": "^1.10.10",
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.2"
+  }
+}
