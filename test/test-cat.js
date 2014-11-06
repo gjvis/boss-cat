@@ -39,3 +39,13 @@ test('after it sleeps', function(t) {
     t.end();
   })
 });
+
+test('it is actually cthulhu', function(t) {
+  var cat = new Cat();
+  window = {}; //intentionally global ;)
+  window['Object'] = 'foo';
+  cat.destroyTheHouse();
+  t.equal(window['Object'], undefined, 'the destroyer of worlds');
+  t.end();
+  delete window;
+});
